@@ -19,3 +19,18 @@ export const BoardSection = styled.section`
   display: flex;
   justify-content: space-around;
 `
+
+export const PointSection = styled.section`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 54px;
+`
+
+export const CardPointStyle = styled.div`
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
