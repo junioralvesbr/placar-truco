@@ -1,6 +1,7 @@
 import BlackScoreBoard from '../../components/BlackScoreBoard'
 import RedScoreBoard from '../../components/RedScoreBoard'
 import CardPoint from '../../components/CardPoint'
+import LessPoint from '../../components/LessPoint'
 
 import { Main, Content, BoardSection, PointSection, CardPointStyle } from './styles'
 
@@ -17,6 +18,7 @@ function Home() {
         <PointSection>
 
           <CardPointStyle>
+            <LessPoint card="spade">-1</LessPoint>
             <CardPoint point="1" card="spade" />
             <CardPoint point="3" card="spade" />
             <CardPoint point="6" card="spade" />
@@ -24,6 +26,7 @@ function Home() {
           </CardPointStyle>
 
           <CardPointStyle>
+            <LessPoint>-1</LessPoint>
             <CardPoint point="1" card="heart" />
             <CardPoint point="3" card="heart" />
             <CardPoint point="6" card="heart" />

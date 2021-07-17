@@ -25,12 +25,13 @@ export const PointSection = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 54px;
+  margin-top: 20px;
 `
 
 export const CardPointStyle = styled.div`
-  height: 170px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 `
