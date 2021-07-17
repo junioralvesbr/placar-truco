@@ -4,12 +4,12 @@ import IconHeart from '../IconHeart'
 
 const naip = [];
 
-function CardPoint({ point, card }) {
+function CardPoint({ point, card, onClick }) {
   naip['spade'] = <IconSpade />
   naip['heart'] = <IconHeart />
 
   return (
-    <CardPointStyle card={card}>
+    <CardPointStyle card={card} onClick={onClick}>
       {naip[card]}
       <TextScore>+{point}</TextScore>
       {naip[card]}
