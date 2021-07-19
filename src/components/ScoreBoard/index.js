@@ -1,19 +1,22 @@
-import { ScoreBoardStyle, TextScore } from './styles'
+import { Container, Title, ScoreBoardStyle, TextScore } from './styles'
 import IconSpade from '../IconSpade'
 import IconHeart from '../IconHeart'
 
 const naip = []
 
-function ScoreBoard({ card, score }) {
+function ScoreBoard({ title, card, score }) {
   naip['spade'] = <IconSpade />
   naip['heart'] = <IconHeart />
 
   return (
-    <ScoreBoardStyle>
-      {naip[card]}
-      <TextScore naip={card}>{score}</TextScore>
-      {naip[card]}
-    </ScoreBoardStyle>
+    <Container>
+      <Title>{title}</Title>
+      <ScoreBoardStyle>
+        {naip[card]}
+        <TextScore naip={card}>{score}</TextScore>
+        {naip[card]}
+      </ScoreBoardStyle>
+    </Container>
   )
 }
 

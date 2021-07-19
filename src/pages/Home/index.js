@@ -32,8 +32,8 @@ function Home() {
       <Content>
 
         <BoardSection>
-          <ScoreBoard card="spade" score={spadeScore} />
-          <ScoreBoard card="heart" score={heartScore} />
+          <ScoreBoard title="NÓS" card="spade" score={spadeScore} />
+          <ScoreBoard title="ELES" card="heart" score={heartScore} />
         </BoardSection>
 
         <PointSection>
