@@ -9,6 +9,15 @@ import { Main, Content, BoardSection, PointSection, CardPointStyle } from './sty
 function Home() {
   const [spadeScore, setSpadeScore] = useState(0)
 
+  const upScore = (point) => {
+    let totalScore = spadeScore + point
+    totalScore >= 12 ? setSpadeScore(12) : setSpadeScore(totalScore)
+  }
+
+  const downScore = () => {
+    spadeScore > 0 && setSpadeScore(spadeScore - 1)
+  }
+
   return (
     <Main>
       <Content>
@@ -21,11 +30,11 @@ function Home() {
         <PointSection>
 
           <CardPointStyle>
-            <LessPoint card="spade" onClick={() => setSpadeScore(spadeScore - 1)}>-1</LessPoint>
-            <CardPoint point="1" card="spade" onClick={() => setSpadeScore(spadeScore + 1)} />
-            <CardPoint point="3" card="spade" onClick={() => setSpadeScore(spadeScore + 3)} />
-            <CardPoint point="6" card="spade" onClick={() => setSpadeScore(spadeScore + 6)} />
-            <CardPoint point="9" card="spade" onClick={() => setSpadeScore(spadeScore + 9)} />
+            <LessPoint card="spade" onClick={downScore}>-1</LessPoint>
+            <CardPoint point="1" card="spade" onClick={() => upScore(1)} />
+            <CardPoint point="3" card="spade" onClick={() => upScore(3)} />
+            <CardPoint point="6" card="spade" onClick={() => upScore(6)} />
+            <CardPoint point="9" card="spade" onClick={() => upScore(9)} />
           </CardPointStyle>
 
           <CardPointStyle>
