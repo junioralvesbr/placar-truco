@@ -12,7 +12,6 @@ export const Content = styled.div`
   width: 100%;
   max-width: 360px;
   height: auto;
-  max-height: 583px;
 `
 
 export const BoardSection = styled.section`
@@ -34,4 +33,11 @@ export const CardPointStyle = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+`
+
+export const MatchWrapper = styled.section`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
 `

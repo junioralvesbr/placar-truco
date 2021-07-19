@@ -1,9 +1,9 @@
 import { useState } from 'react'
+import { Main, Content, BoardSection, PointSection, CardPointStyle, MatchWrapper } from './styles'
 import ScoreBoard from '../../components/ScoreBoard'
 import CardPoint from '../../components/CardPoint'
 import LessPoint from '../../components/LessPoint'
-
-import { Main, Content, BoardSection, PointSection, CardPointStyle } from './styles'
+import Match from '../../components/Match'
 
 function Home() {
   const [spadeScore, setSpadeScore] = useState(0)
@@ -55,6 +55,11 @@ function Home() {
           </CardPointStyle>
 
         </PointSection>
+
+        <MatchWrapper>
+          <Match>0</Match>
+          <Match>0</Match>
+        </MatchWrapper>
 
       </Content>
     </Main>
