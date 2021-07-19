@@ -12,12 +12,12 @@ const Template = args => <ScoreBoard {...args} />
 
 export const Spade = Template.bind({})
 Spade.args = {
-  naip: 'spade',
+  card: 'spade',
   score: '0'
 }
 
 export const Heart = Template.bind({})
 Heart.args = {
-  naip: 'heart',
+  card: 'heart',
   score: '0'
 }

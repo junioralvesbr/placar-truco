@@ -32,8 +32,8 @@ function Home() {
       <Content>
 
         <BoardSection>
-          <ScoreBoard naip="spade" score={spadeScore} />
-          <ScoreBoard naip="heart" score={heartScore} />
+          <ScoreBoard card="spade" score={spadeScore} />
+          <ScoreBoard card="heart" score={heartScore} />
         </BoardSection>
 
         <PointSection>
