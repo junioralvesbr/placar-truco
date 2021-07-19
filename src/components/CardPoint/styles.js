@@ -3,8 +3,8 @@ import IconSpade from '../../components/IconSpade'
 import IconHeart from '../../components/IconHeart'
 
 export const CardPointStyle = styled.button`
-  width: 60px;
-  height: 30px;
+  width: 90px;
+  height: 50px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@ export const CardPointStyle = styled.button`
 
   & > ${IconSpade},
   & > ${IconHeart} {
-  width: 10px;
+  width: 15px;
   height: auto;
 }
 
@@ -36,5 +36,5 @@ export const CardPointStyle = styled.button`
 `
 
 export const TextScore = styled.p`
-  font-size: 16px;
+  font-size: 20px;
 `
