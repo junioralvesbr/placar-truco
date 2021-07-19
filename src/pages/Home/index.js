@@ -10,12 +10,12 @@ function Home() {
   const [spadeScore, setSpadeScore] = useState(0)
   const [heartScore, setHeartScore] = useState(0)
 
-  const upScore = (point) => {
+  const upSpadeScore = (point) => {
     let totalScore = spadeScore + point
     totalScore >= 12 ? setSpadeScore(12) : setSpadeScore(totalScore)
   }
 
-  const downScore = () => {
+  const downSpadeScore = () => {
     spadeScore > 0 && setSpadeScore(spadeScore - 1)
   }
 
@@ -40,11 +40,11 @@ function Home() {
         <PointSection>
 
           <CardPointStyle>
-            <LessPoint card="spade" onClick={downScore}>-1</LessPoint>
-            <CardPoint point="1" card="spade" onClick={() => upScore(1)} />
-            <CardPoint point="3" card="spade" onClick={() => upScore(3)} />
-            <CardPoint point="6" card="spade" onClick={() => upScore(6)} />
-            <CardPoint point="9" card="spade" onClick={() => upScore(9)} />
+            <LessPoint card="spade" onClick={downSpadeScore}>-1</LessPoint>
+            <CardPoint point="1" card="spade" onClick={() => upSpadeScore(1)} />
+            <CardPoint point="3" card="spade" onClick={() => upSpadeScore(3)} />
+            <CardPoint point="6" card="spade" onClick={() => upSpadeScore(6)} />
+            <CardPoint point="9" card="spade" onClick={() => upSpadeScore(9)} />
           </CardPointStyle>
 
           <CardPointStyle>
