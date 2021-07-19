@@ -8,6 +8,9 @@ export default {
   }
 }
 
-const Template = () => <RedScoreBoard />
+const Template = args => <RedScoreBoard {...args} />
 
 export const Default = Template.bind({})
+Default.args = {
+  heartScore: 0
+}
