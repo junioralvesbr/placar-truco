@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import BlackScoreBoard from '../../components/BlackScoreBoard'
-import RedScoreBoard from '../../components/RedScoreBoard'
+import ScoreBoard from '../../components/ScoreBoard'
 import CardPoint from '../../components/CardPoint'
 import LessPoint from '../../components/LessPoint'
 
@@ -33,8 +32,8 @@ function Home() {
       <Content>
 
         <BoardSection>
-          <BlackScoreBoard spadeScore={spadeScore} />
-          <RedScoreBoard heartScore={heartScore} />
+          <ScoreBoard naip="spade" score={spadeScore} />
+          <ScoreBoard naip="heart" score={heartScore} />
         </BoardSection>
 
         <PointSection>

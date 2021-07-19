@@ -10,7 +10,7 @@ export const Main = styled.main`
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   height: auto;
   max-height: 583px;
 `
