@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Main, Container, BoardSection, PointSection, CardPointStyle, MatchWrapper } from './styles'
+import ResetGame from '../../components/ResetGame'
 import ScoreBoard from '../../components/ScoreBoard'
 import CardPoint from '../../components/CardPoint'
 import LessPoint from '../../components/LessPoint'
@@ -15,6 +16,7 @@ function Home() {
     let totalScore = spadeScore + point
     if (totalScore >= 12) {
       setSpadeScore(0)
+      setHeartScore(0)
       setSpadeMatch(old => old + 1)
       return
     }
@@ -28,6 +30,7 @@ function Home() {
   const upHeartScore = (point) => {
     let totalScore = heartScore + point
     if (totalScore >= 12) {
+      setSpadeScore(0)
       setHeartScore(0)
       setHeartMatch(old => old + 1)
       return
@@ -37,6 +40,13 @@ function Home() {
 
   const downHeartScore = () => {
     heartScore > 0 && setHeartScore(heartScore - 1)
+  }
+
+  const resetGame = () => {
+    setSpadeScore(0)
+    setHeartScore(0)
+    setSpadeMatch(0)
+    setHeartMatch(0)
   }
 
   return (
@@ -73,6 +83,7 @@ function Home() {
           <Match>{heartMatch}</Match>
         </MatchWrapper>
 
+        <ResetGame onClick={resetGame}>Reiniciar</ResetGame>
       </Container>
     </Main>
   )

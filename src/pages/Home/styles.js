@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ResetGame from '../../components/ResetGame'
 
 export const Main = styled.main`
   width: 100vw;
@@ -12,6 +13,12 @@ export const Container = styled.div`
   width: 100%;
   max-width: 360px;
   height: 90%;
+
+  & > ${ResetGame} {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
 `
 
 export const BoardSection = styled.section`
