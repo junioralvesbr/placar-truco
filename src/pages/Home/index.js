@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Main, Content, BoardSection, PointSection, CardPointStyle, MatchWrapper } from './styles'
+import { Main, Container, BoardSection, PointSection, CardPointStyle, MatchWrapper } from './styles'
 import ScoreBoard from '../../components/ScoreBoard'
 import CardPoint from '../../components/CardPoint'
 import LessPoint from '../../components/LessPoint'
@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <Main>
-      <Content>
+      <Container>
 
         <BoardSection>
           <ScoreBoard title="NÓS" card="spade" score={spadeScore} />
@@ -61,7 +61,7 @@ function Home() {
           <Match>0</Match>
         </MatchWrapper>
 
-      </Content>
+      </Container>
     </Main>
   )
 }

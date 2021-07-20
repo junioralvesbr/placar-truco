@@ -8,10 +8,10 @@ export const Main = styled.main`
   align-items: center;
 `
 
-export const Content = styled.div`
+export const Container = styled.div`
   width: 100%;
   max-width: 360px;
-  height: auto;
+  height: 90%;
 `
 
 export const BoardSection = styled.section`
