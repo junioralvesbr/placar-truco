@@ -8,10 +8,17 @@ import Match from '../../components/Match'
 function Home() {
   const [spadeScore, setSpadeScore] = useState(0)
   const [heartScore, setHeartScore] = useState(0)
+  const [spadeMatch, setSpadeMatch] = useState(0)
+  const [heartMatch, setHeartMatch] = useState(0)
 
   const upSpadeScore = (point) => {
     let totalScore = spadeScore + point
-    totalScore >= 12 ? setSpadeScore(12) : setSpadeScore(totalScore)
+    if (totalScore >= 12) {
+      setSpadeScore(0)
+      setSpadeMatch(old => old + 1)
+      return
+    }
+    setSpadeScore(totalScore)
   }
 
   const downSpadeScore = () => {
@@ -20,7 +27,12 @@ function Home() {
 
   const upHeartScore = (point) => {
     let totalScore = heartScore + point
-    totalScore >= 12 ? setHeartScore(12) : setHeartScore(totalScore)
+    if (totalScore >= 12) {
+      setHeartScore(0)
+      setHeartMatch(old => old + 1)
+      return
+    }
+    setHeartScore(totalScore)
   }
 
   const downHeartScore = () => {
@@ -57,8 +69,8 @@ function Home() {
         </PointSection>
 
         <MatchWrapper>
-          <Match>0</Match>
-          <Match>0</Match>
+          <Match>{spadeMatch}</Match>
+          <Match>{heartMatch}</Match>
         </MatchWrapper>
 
       </Container>
