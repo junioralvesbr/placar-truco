@@ -8,6 +8,9 @@ export default {
   }
 }
 
-const Template = () => <Match>0</Match>
+const Template = args => <Match>{args.score}</Match>
 
 export const Default = Template.bind({})
+Default.args = {
+  score: 0
+}

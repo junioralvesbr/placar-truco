@@ -13,11 +13,11 @@ const Template = args => <CardPoint {...args} />
 export const Spade = Template.bind({})
 Spade.args = {
   card: 'spade',
-  point: '3'
+  point: 1
 }
 
 export const Heart = Template.bind({})
 Heart.args = {
   card: 'heart',
-  point: '3'
+  point: 1
 }
