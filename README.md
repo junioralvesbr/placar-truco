@@ -1,4 +1,6 @@
-# Placr de truco
+# Placar de truco
+[ACESSAR O APLICATIVO](https://placar-truco.herokuapp.com/)
+
 ![Alt Text](/src/assets/truco.jpg)
 
 ![NodeJs](https://img.shields.io/badge/JavaScript-NODEJS-green) ![HTML](https://img.shields.io/badge/HTML-HTML5-orange) ![CSS](https://img.shields.io/badge/STYLE-CSS3-blue)
@@ -13,6 +15,11 @@ Este projeto foi feito em REACT com Styled-components.
 
 E para a documentação dos componentes foi ustilizado o StoryBook.
 
+---
+## Para acessar o aplicativo utilize o [link](https://placar-truco.herokuapp.com/):
+```
+  https://placar-truco.herokuapp.com/
+```
 ---
 ## Instalação
 Clone o projeto em sua maquina
@@ -33,11 +40,8 @@ E utilize
 
 Para iniciar o storyBook utilize o comando
 ~~~bash
-npm run storybook
+yarn storybook
 ~~~
-![Storybook](/src/assets/storybook.png)
-
-
 # Autor: Junior Alves
 ![LinkdIn](https://img.shields.io/badge/LinkedIn-Junior%20Alves-blue?link=https://img.shields.io/badge/LinkedIn-Junior%20Alves-blue)
 ![gmail](https://img.shields.io/badge/Gmail-jrnalves%40gmail.com-red)
