@@ -9,11 +9,21 @@
 ![React](https://img.shields.io/badge/JavaScript-REACT-blue) ![Styled-Components](https://img.shields.io/badge/React-Styled--components-orange) ![StoryBook](https://img.shields.io/badge/REACT-StoryBook-ff69b4)
 
 # Descrição:
-É um placar simples para as partidas de truco. Nele você tem o time preto e vermelho, e chegando até 12 é marcado o numero de partidas vencidas.
+É um placar simples de partidas de truco.
 
-Este projeto foi feito em REACT com Styled-components.
+Você tem o time de preto e vermelho, e quem chegar a 12 primeiro, vence a partida.
 
-E para a documentação dos componentes foi ustilizado o StoryBook.
+# Descrição técnica
+Este projeto foi feito em ![React](https://img.shields.io/badge/JavaScript-REACT-blue) com ![Styled-Components](https://img.shields.io/badge/React-Styled--components-orange).
+
+E para a documentação dos componentes foi ustilizado o ![StoryBook](https://img.shields.io/badge/REACT-StoryBook-ff69b4).
+
+# Aprendizado
+Eu aprendi com esse projeto, toda a parte de componentização em react, bem como a interação entre os components.
+
+A utilização basica de styled-components e como css é usado junto na criação dos components.
+
+E a orgamização do projeto utilizando storyBook
 
 ---
 ## Para acessar o aplicativo utilize o [link](https://placar-truco.herokuapp.com/):
