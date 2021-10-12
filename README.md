@@ -23,7 +23,9 @@ Eu aprendi com esse projeto, toda a parte de componentização em react, bem com
 
 A utilização basica de styled-components e como css é usado junto na criação dos components.
 
-E a orgamização do projeto utilizando storyBook
+Tambem pude aprender a orgamizar o projeto utilizando storyBook.
+
+Todos os componentes desse projeto foram criados em html e css puro, oque fixou ainda mais meus conhecimentos nessas linguagens. 
 
 ---
 ## Para acessar o aplicativo utilize o [link](https://placar-truco.herokuapp.com/):
