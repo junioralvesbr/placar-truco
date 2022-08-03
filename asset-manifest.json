@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/placar-truco/static/js/main.3c9fb56f.chunk.js",
+    "main.js.map": "/placar-truco/static/js/main.3c9fb56f.chunk.js.map",
+    "runtime-main.js": "/placar-truco/static/js/runtime-main.3553f59c.js",
+    "runtime-main.js.map": "/placar-truco/static/js/runtime-main.3553f59c.js.map",
+    "static/js/2.55863b56.chunk.js": "/placar-truco/static/js/2.55863b56.chunk.js",
+    "static/js/2.55863b56.chunk.js.map": "/placar-truco/static/js/2.55863b56.chunk.js.map",
+    "index.html": "/placar-truco/index.html",
+    "static/js/2.55863b56.chunk.js.LICENSE.txt": "/placar-truco/static/js/2.55863b56.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3553f59c.js",
+    "static/js/2.55863b56.chunk.js",
+    "static/js/main.3c9fb56f.chunk.js"
+  ]
+}
