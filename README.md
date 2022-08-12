@@ -1,5 +1,5 @@
 # Placar de truco
-[ACESSAR O APLICATIVO](https://placar-truco.herokuapp.com/)
+[ACESSAR O APLICATIVO](https://junioralvesbr.github.io/placar-truco/)
 
 ![Alt Text](/src/assets/truco.jpg)
 
@@ -28,9 +28,9 @@ Tambem pude aprender a orgamizar o projeto utilizando storyBook.
 Todos os componentes desse projeto foram criados em html e css puro, oque fixou ainda mais meus conhecimentos nessas linguagens. 
 
 ---
-## Para acessar o aplicativo utilize o [link](https://placar-truco.herokuapp.com/):
+## Para acessar o aplicativo utilize o [link](https://junioralvesbr.github.io/placar-truco/):
 ```
-  https://placar-truco.herokuapp.com/
+  https://junioralvesbr.github.io/placar-truco/
 ```
 ---
 ## Instalação
